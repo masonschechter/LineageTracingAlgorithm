@@ -67,7 +67,7 @@ with open(sys.argv[1], 'r') as samples:
 						umi_dict[key]["ins_count"] = int(ins_count)
 						umi_dict[key]["ins_percent"] = float(ins_perc)
 
-outfile = 'umi_pickle.pkl'
+outfile = 'TL_1-8_umi_pickle.pkl'
 with open(outfile, 'wb') as file:
 	pickle.dump(umi_dict, file)
 
